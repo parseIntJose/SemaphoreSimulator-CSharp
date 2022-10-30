@@ -42,6 +42,7 @@
             this.pictureBox_redB = new System.Windows.Forms.PictureBox();
             this.pictureBox_yellowB = new System.Windows.Forms.PictureBox();
             this.pictureBox_semaphoreB = new System.Windows.Forms.PictureBox();
+            this.pictureBox_car2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_semaphore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_car)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_yellow)).BeginInit();
@@ -51,6 +52,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_redB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_yellowB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_semaphoreB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_car2)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox_semaphore
@@ -58,7 +60,7 @@
             this.pictureBox_semaphore.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_semaphore.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_semaphore.BackgroundImage")));
             this.pictureBox_semaphore.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_semaphore.Location = new System.Drawing.Point(1039, 2);
+            this.pictureBox_semaphore.Location = new System.Drawing.Point(1039, 274);
             this.pictureBox_semaphore.Name = "pictureBox_semaphore";
             this.pictureBox_semaphore.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_semaphore.TabIndex = 0;
@@ -69,7 +71,7 @@
             this.pictureBox_car.BackColor = System.Drawing.SystemColors.Control;
             this.pictureBox_car.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_car.BackgroundImage")));
             this.pictureBox_car.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox_car.Location = new System.Drawing.Point(12, 371);
+            this.pictureBox_car.Location = new System.Drawing.Point(12, 386);
             this.pictureBox_car.Name = "pictureBox_car";
             this.pictureBox_car.Size = new System.Drawing.Size(313, 172);
             this.pictureBox_car.TabIndex = 1;
@@ -92,7 +94,7 @@
             this.pictureBox_yellow.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_yellow.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_yellow.BackgroundImage")));
             this.pictureBox_yellow.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_yellow.Location = new System.Drawing.Point(1039, 2);
+            this.pictureBox_yellow.Location = new System.Drawing.Point(1039, 274);
             this.pictureBox_yellow.Name = "pictureBox_yellow";
             this.pictureBox_yellow.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_yellow.TabIndex = 3;
@@ -104,7 +106,7 @@
             this.pictureBox_red.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_red.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_red.BackgroundImage")));
             this.pictureBox_red.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_red.Location = new System.Drawing.Point(1039, 2);
+            this.pictureBox_red.Location = new System.Drawing.Point(1039, 274);
             this.pictureBox_red.Name = "pictureBox_red";
             this.pictureBox_red.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_red.TabIndex = 4;
@@ -116,7 +118,7 @@
             this.pictureBox_green.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_green.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_green.BackgroundImage")));
             this.pictureBox_green.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_green.Location = new System.Drawing.Point(1039, 2);
+            this.pictureBox_green.Location = new System.Drawing.Point(1039, 274);
             this.pictureBox_green.Name = "pictureBox_green";
             this.pictureBox_green.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_green.TabIndex = 5;
@@ -179,6 +181,17 @@
             this.pictureBox_semaphoreB.TabIndex = 9;
             this.pictureBox_semaphoreB.TabStop = false;
             // 
+            // pictureBox_car2
+            // 
+            this.pictureBox_car2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox_car2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_car2.BackgroundImage")));
+            this.pictureBox_car2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox_car2.Location = new System.Drawing.Point(955, 71);
+            this.pictureBox_car2.Name = "pictureBox_car2";
+            this.pictureBox_car2.Size = new System.Drawing.Size(342, 213);
+            this.pictureBox_car2.TabIndex = 10;
+            this.pictureBox_car2.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -186,6 +199,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1342, 641);
+            this.Controls.Add(this.pictureBox_car2);
             this.Controls.Add(this.pictureBox_semaphoreB);
             this.Controls.Add(this.pictureBox_yellowB);
             this.Controls.Add(this.pictureBox_redB);
@@ -207,6 +221,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_redB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_yellowB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_semaphoreB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_car2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,5 +240,6 @@
         private PictureBox pictureBox_redB;
         private PictureBox pictureBox_yellowB;
         private PictureBox pictureBox_semaphoreB;
+        private PictureBox pictureBox_car2;
     }
 }

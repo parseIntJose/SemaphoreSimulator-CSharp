@@ -1,8 +1,7 @@
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
-    {   
-        //int machineState = 0;
+    {
         int cntTimer = 0;
         int cntTimer2 = 0;
         enum state : int
@@ -12,7 +11,7 @@ namespace WinFormsApp1
             a_yellow = 2,
             a_red = 3,
             b_green = 4,
-            b_yellow = 5
+            b_yellow = 5,
         }
 
         state machineState;
@@ -26,7 +25,7 @@ namespace WinFormsApp1
         private async void button_start_Click(object sender, EventArgs e)
         {
             
-            if (button_start.Text == "START")
+            if (string.Compare(button_start.Text, "START") == 0)
             {
 
                 button_start.Enabled = false; 
@@ -35,7 +34,16 @@ namespace WinFormsApp1
                 timer_100ms.Enabled = true;
             }
 
-            
+            //12
+            //955
+            else if (string.Compare(button_start.Text, "RESET") == 0)
+            {
+                button_start.Text = "START";
+                pictureBox_car.Location = new Point(12, pictureBox_car.Location.Y);
+                pictureBox_car2.Location = new Point(955, pictureBox_car2.Location.Y);
+                pictureBox_red.Visible = true;
+                pictureBox_redB.Visible = true;
+            }
         }
 
         private void timer_yellow_Tick(object sender, EventArgs e)
@@ -44,9 +52,17 @@ namespace WinFormsApp1
 
         private void timer_100ms_Tick(object sender, EventArgs e)
         {
+
             cntTimer++;
 
-            switch(machineState)
+            if ((pictureBox_car.Location.X > 1190) & pictureBox_car2.Location.X < -350)
+            {
+                timer_100ms.Enabled = false;
+                button_start.Text = "RESET";
+                button_start.Enabled = true;
+            }
+
+            switch (machineState)
             {
                 case state.allRed:
 
@@ -77,6 +93,7 @@ namespace WinFormsApp1
                     pictureBox_greenB.Visible = false;
                     pictureBox_yellow.Visible = false;
                     pictureBox_yellowB.Visible = false;
+                    pictureBox_car.Location = new Point(pictureBox_car.Location.X + (15), pictureBox_car.Location.Y);
 
                     if (cntTimer > 100)
                     {
@@ -134,6 +151,7 @@ namespace WinFormsApp1
                     pictureBox_greenB.Visible = true;
                     pictureBox_yellow.Visible = false;
                     pictureBox_yellowB.Visible = false;
+                    pictureBox_car2.Location = new Point(pictureBox_car2.Location.X - (15), pictureBox_car2.Location.Y);
 
                     if (cntTimer > 100)
                     {
