@@ -2,6 +2,7 @@ namespace WinFormsApp1
 {
     public partial class Form1 : Form
     {
+        bool resetMachineState = false;
         int cntTimer = 0;
         int cntTimer2 = 0;
         enum state : int
@@ -43,6 +44,7 @@ namespace WinFormsApp1
                 pictureBox_car2.Location = new Point(955, pictureBox_car2.Location.Y);
                 pictureBox_red.Visible = true;
                 pictureBox_redB.Visible = true;
+                resetMachineState = true;
             }
         }
 
@@ -60,6 +62,13 @@ namespace WinFormsApp1
                 timer_100ms.Enabled = false;
                 button_start.Text = "RESET";
                 button_start.Enabled = true;
+            }
+
+            if(resetMachineState == true)
+            {
+                cntTimer = 0;
+                machineState = state.allRed;
+                resetMachineState = false;
             }
 
             switch (machineState)
@@ -95,7 +104,7 @@ namespace WinFormsApp1
                     pictureBox_yellowB.Visible = false;
                     pictureBox_car.Location = new Point(pictureBox_car.Location.X + (15), pictureBox_car.Location.Y);
 
-                    if (cntTimer > 100)
+                    if (cntTimer > 30)
                     {
                         cntTimer = 0;
                         machineState = state.a_yellow;
@@ -113,8 +122,9 @@ namespace WinFormsApp1
                     pictureBox_greenB.Visible = false;
                     pictureBox_yellow.Visible = true;
                     pictureBox_yellowB.Visible = false;
+                    pictureBox_car.Location = new Point(pictureBox_car.Location.X + (5), pictureBox_car.Location.Y);
 
-                    if (cntTimer > 40)
+                    if (cntTimer > 30)
                     {
                         cntTimer = 0;
                         machineState = state.a_red;
@@ -153,7 +163,7 @@ namespace WinFormsApp1
                     pictureBox_yellowB.Visible = false;
                     pictureBox_car2.Location = new Point(pictureBox_car2.Location.X - (15), pictureBox_car2.Location.Y);
 
-                    if (cntTimer > 100)
+                    if (cntTimer > 30)
                     {
                         cntTimer = 0;
                         machineState = state.b_yellow;
@@ -171,8 +181,9 @@ namespace WinFormsApp1
                     pictureBox_greenB.Visible = false;
                     pictureBox_yellow.Visible = false;
                     pictureBox_yellowB.Visible = true;
+                    pictureBox_car2.Location = new Point(pictureBox_car2.Location.X - (5), pictureBox_car2.Location.Y);
 
-                    if (cntTimer > 40)
+                    if (cntTimer > 30)
                     {
                         cntTimer = 0;
                         machineState = state.allRed;

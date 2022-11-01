@@ -81,7 +81,7 @@
             // 
             this.button_start.BackColor = System.Drawing.SystemColors.Control;
             this.button_start.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button_start.Location = new System.Drawing.Point(30, 43);
+            this.button_start.Location = new System.Drawing.Point(3, 12);
             this.button_start.Name = "button_start";
             this.button_start.Size = new System.Drawing.Size(136, 64);
             this.button_start.TabIndex = 2;
@@ -139,7 +139,7 @@
             this.pictureBox_greenB.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_greenB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_greenB.BackgroundImage")));
             this.pictureBox_greenB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_greenB.Location = new System.Drawing.Point(372, -21);
+            this.pictureBox_greenB.Location = new System.Drawing.Point(145, -21);
             this.pictureBox_greenB.Name = "pictureBox_greenB";
             this.pictureBox_greenB.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_greenB.TabIndex = 6;
@@ -151,7 +151,7 @@
             this.pictureBox_redB.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_redB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_redB.BackgroundImage")));
             this.pictureBox_redB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_redB.Location = new System.Drawing.Point(372, -21);
+            this.pictureBox_redB.Location = new System.Drawing.Point(145, -21);
             this.pictureBox_redB.Name = "pictureBox_redB";
             this.pictureBox_redB.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_redB.TabIndex = 7;
@@ -163,7 +163,7 @@
             this.pictureBox_yellowB.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_yellowB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_yellowB.BackgroundImage")));
             this.pictureBox_yellowB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_yellowB.Location = new System.Drawing.Point(372, -21);
+            this.pictureBox_yellowB.Location = new System.Drawing.Point(145, -21);
             this.pictureBox_yellowB.Name = "pictureBox_yellowB";
             this.pictureBox_yellowB.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_yellowB.TabIndex = 8;
@@ -175,7 +175,7 @@
             this.pictureBox_semaphoreB.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox_semaphoreB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox_semaphoreB.BackgroundImage")));
             this.pictureBox_semaphoreB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox_semaphoreB.Location = new System.Drawing.Point(372, -10);
+            this.pictureBox_semaphoreB.Location = new System.Drawing.Point(145, -21);
             this.pictureBox_semaphoreB.Name = "pictureBox_semaphoreB";
             this.pictureBox_semaphoreB.Size = new System.Drawing.Size(232, 322);
             this.pictureBox_semaphoreB.TabIndex = 9;
